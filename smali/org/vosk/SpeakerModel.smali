@@ -1,0 +1,137 @@
+.class public Lorg/vosk/SpeakerModel;
+.super Lcom/sun/jna/PointerType;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/AutoCloseable;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 22
+    invoke-direct {p0}, Lcom/sun/jna/PointerType;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1}, Lorg/vosk/LibVosk;->vosk_spk_model_new(Ljava/lang/String;)Lcom/sun/jna/Pointer;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-direct {p0, p1}, Lcom/sun/jna/PointerType;-><init>(Lcom/sun/jna/Pointer;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Lcom/sun/jna/PointerType;->getPointer()Lcom/sun/jna/Pointer;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    if-eqz p0, :cond_0
+
+    .line 13
+    .line 14
+    return-void
+
+    .line 15
+    :cond_0
+    const-string p0, "Failed to create a speaker model"
+
+    .line 16
+    .line 17
+    invoke-static {p0}, Ld01;->r(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    const/4 p0, 0x0
+
+    .line 21
+    throw p0
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+.end method
+
+
+# virtual methods
+.method public close()V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lcom/sun/jna/PointerType;->getPointer()Lcom/sun/jna/Pointer;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-static {p0}, Lorg/vosk/LibVosk;->vosk_spk_model_free(Lcom/sun/jna/Pointer;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+.end method

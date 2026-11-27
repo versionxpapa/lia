@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method android:settingsActivity="com.Lia.assistant.MainActivity" android:supportsSwitchingToNextInputMethod="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <subtype android:label="LIA Voice Keyboard" android:imeSubtypeLocale="en_IN" android:imeSubtypeMode="keyboard" />
+</input-method>
